@@ -1,0 +1,138 @@
+.amz-cart-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .amz-cart-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amz-cart-main {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.amz-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--amz-border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.amz-cart-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.amz-cart-row {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--amz-border);
+}
+
+@media (max-width: 640px) {
+  .amz-cart-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amz-cart-row-img {
+  width: 130px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--amz-border);
+  cursor: pointer;
+}
+
+.amz-cart-item-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--amz-text);
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+}
+
+.amz-cart-item-title:hover {
+  color: var(--amz-link-hover);
+}
+
+.amz-cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.amz-qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f0f2f2;
+}
+
+.amz-qty-btn {
+  border: none;
+  background: transparent;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.amz-qty-btn:hover {
+  background: #e3e6e6;
+}
+
+.amz-qty-val {
+  padding: 0.3rem 0.75rem;
+  background: var(--amz-white);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.amz-cart-item-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.amz-cart-subtotal-footer {
+  text-align: right;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.amz-cart-sidebar {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  align-self: start;
+}
+
+.amz-free-ship-banner {
+  color: var(--amz-green);
+  font-size: 0.85rem;
+  margin-bottom: 0.85rem;
+  font-weight: 600;
+}
+
+.amz-coupon-box {
+  display: flex;
+  gap: 0.45rem;
+  margin: 0.85rem 0;
+}

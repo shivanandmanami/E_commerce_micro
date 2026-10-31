@@ -1,0 +1,88 @@
+.order-card {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  margin-bottom: 1.15rem;
+  overflow: hidden;
+}
+
+.order-header {
+  background: #f0f2f2;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--amz-border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.order-body {
+  padding: 1.15rem 1.25rem;
+}
+
+.order-timestamp {
+  font-size: 0.8rem;
+  color: var(--amz-muted);
+  margin-left: 0.75rem;
+}
+
+.order-failure-reason {
+  color: var(--amz-red);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.saga-trail-section {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+}
+
+.saga-trail-heading {
+  font-size: 0.8rem;
+  color: var(--amz-muted);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.amz-tracking-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin: 0.85rem 0;
+}
+
+.amz-tracking-step {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: #f0f2f2;
+  border: 1px solid var(--amz-border);
+  font-size: 0.78rem;
+  text-align: center;
+  color: var(--amz-muted);
+}
+
+.amz-tracking-step.done {
+  background: #e6f4ea;
+  border-color: #34a853;
+  color: var(--amz-green);
+  font-weight: 700;
+}
+
+.amz-tracking-step.cancelled {
+  background: #fce8e6;
+  border-color: #f6aea9;
+  color: var(--amz-red);
+  font-weight: 700;
+}
+
+.amz-invoice-box {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--amz-white);
+  border: 2px solid var(--amz-navy);
+  border-radius: 8px;
+  padding: 2rem;
+}
+

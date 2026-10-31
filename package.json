@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce-microservices",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Event-driven microservice e-commerce platform with API Gateway, Elasticsearch Search, MongoDB Catalog, Redis Cart, Kafka Order/Inventory Saga, Stripe Payments, and Customer/Admin Portals",
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "tsx scripts/start-all.ts",
+    "verify": "tsx scripts/verify-platform.ts",
+    "dev:gateway": "npm --workspace=@ecommerce/api-gateway run dev",
+    "dev:catalog": "npm --workspace=@ecommerce/catalog-service run dev",
+    "dev:search": "npm --workspace=@ecommerce/search-service run dev",
+    "dev:cart": "npm --workspace=@ecommerce/cart-service run dev",
+    "dev:order-inventory": "npm --workspace=@ecommerce/order-inventory-service run dev",
+    "dev:payment": "npm --workspace=@ecommerce/payment-service run dev",
+    "dev:customer-admin": "npm --workspace=@ecommerce/customer-admin-service run dev",
+    "dev:portal": "npm --workspace=@ecommerce/web-portal run dev",
+    "test": "tsx scripts/verify-platform.ts",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down -v"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

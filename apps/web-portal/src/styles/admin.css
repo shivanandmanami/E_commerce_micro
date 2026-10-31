@@ -1,0 +1,78 @@
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.kpi-card {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  padding: 1.15rem;
+}
+
+.kpi-value {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  color: var(--amz-text);
+}
+
+.admin-operations-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .admin-operations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--amz-border);
+}
+
+.table th {
+  background: #f7f8f8;
+  color: var(--amz-muted);
+}
+
+.dynamic-attr-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.amz-chart-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 60px;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.55rem;
+  font-size: 0.85rem;
+}
+
+.amz-chart-bar-bg {
+  height: 14px;
+  background: #eaeded;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.amz-chart-bar-fill {
+  height: 100%;
+  background: var(--amz-orange);
+  border-radius: 999px;
+}
+

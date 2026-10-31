@@ -1,0 +1,226 @@
+.amz-results-bar {
+  background: var(--amz-white);
+  border-bottom: 1px solid var(--amz-border);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.amz-sort-select {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--amz-border);
+  background: #f0f2f2;
+  font-size: 0.84rem;
+}
+
+.amz-catalog-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .amz-catalog-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amz-sidebar {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  padding: 1rem;
+  align-self: start;
+}
+
+.amz-facet-group {
+  margin-bottom: 1.15rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.amz-facet-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.amz-facet-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--amz-text);
+}
+
+.amz-facet-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.28rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--amz-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.amz-facet-option:hover,
+.amz-facet-option.active {
+  color: var(--amz-link-hover);
+  background: #fdf8f3;
+  font-weight: 700;
+}
+
+.amz-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.45rem;
+  cursor: pointer;
+}
+
+.amz-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1rem;
+}
+
+.amz-product-card {
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.15s ease;
+}
+
+.amz-product-card:hover {
+  box-shadow: 0 4px 14px rgba(15, 17, 17, 0.12);
+}
+
+.amz-product-img-wrap {
+  background: #f7f8f8;
+  padding: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f2f2;
+}
+
+.amz-product-img-wrap img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.amz-product-body {
+  padding: 0.9rem 1rem;
+}
+
+.amz-product-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--amz-text);
+  margin: 0.3rem 0;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.amz-product-title:hover {
+  color: var(--amz-link-hover);
+}
+
+.amz-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.amz-price-block {
+  margin: 0.4rem 0;
+}
+
+.amz-price-symbol {
+  font-size: 0.8rem;
+  vertical-align: super;
+}
+
+.amz-price-whole {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.amz-deal-badge {
+  display: inline-block;
+  background: #cc0c39;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.amz-card-actions {
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.amz-pagination {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.amz-flash-banner {
+  background: linear-gradient(90deg, #131921 0%, #232f3e 60%, #cc0c39 100%);
+  color: var(--amz-white);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.amz-flash-timer {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.amz-recently-viewed {
+  margin-top: 2rem;
+  background: var(--amz-white);
+  border: 1px solid var(--amz-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+

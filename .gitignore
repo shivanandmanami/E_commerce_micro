@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build & compiled output
+dist/
+**/dist/
+build/
+**/build/
+*.tsbuildinfo
+.next/
+.vite/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs & coverage
+*.log
+npm-debug.log*
+coverage/
+
+# Editor / OS / Nested folders
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+remote/
